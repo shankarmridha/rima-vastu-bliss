@@ -26,9 +26,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-[160px] h-[50px] border-2 border-dashed border-primary/50 rounded-lg bg-primary/5 flex items-center justify-center">
-              <span className="text-[10px] text-muted-foreground text-center leading-tight">📷 Upload Logo Here</span>
-            </div>
+            <img src="/Rima_logo.png" alt="Rima Vastu Bliss" className="h-20 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}

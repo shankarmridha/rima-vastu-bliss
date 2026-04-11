@@ -19,15 +19,12 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="w-72 h-96 photo-upload-placeholder">
-                <span className="text-3xl">📷</span>
-                <p className="text-sm font-medium text-foreground/70 text-center px-4">Upload Rima Ma'am's Photo Here</p>
-              </div>
+              <img src="/Rima_profile.jpg" alt="Rima Mridha" className="w-72 h-96 object-cover rounded-lg shadow-lg" />
             </div>
             <div>
               <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">About</p>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
-                Meet Rima Ma'am
+                Meet Rima Mridha
               </h1>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -42,7 +39,7 @@ const AboutPage = () => {
                 </p>
                 <p>
                   Fluent in English, Hindi, and Bengali, Rima Ma'am serves clients pan-India with in-person consultations and 
-                  offers online consultations worldwide. Every client receives her signature promise: lifetime support.
+                  offers online consultations worldwide. Every client receives her dedicated support throughout their Vastu journey.
                 </p>
               </div>
             </div>
@@ -95,7 +92,7 @@ const AboutPage = () => {
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-primary">
             <Shield className="w-5 h-5" />
-            <span className="font-semibold text-sm">Lifetime Support Guaranteed for Every Client</span>
+            <span className="font-semibold text-sm">Ongoing Support Throughout Your Vastu Journey</span>
           </div>
         </div>
       </section>

@@ -55,10 +55,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="hidden lg:flex justify-center">
-              <div className="w-80 h-96 photo-upload-placeholder">
-                <span className="text-3xl">📷</span>
-                <p className="text-sm font-medium text-foreground/70 text-center px-4">Upload Rima Ma'am's Photo Here</p>
-              </div>
+              <img src="/Rima_profile.jpg" alt="Rima Mridha" className="w-80 h-96 object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>

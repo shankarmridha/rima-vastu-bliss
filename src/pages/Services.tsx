@@ -25,7 +25,7 @@ const services = [
       "Colour, material, and placement guidance",
       "Remedies that work without structural changes",
       "Detailed written report with actionable steps",
-      "Lifetime follow-up support",
+      "Follow-up support throughout your Vastu journey",
     ],
   },
   {
@@ -40,7 +40,7 @@ const services = [
       "Cash flow and prosperity zone activation",
       "Employee well-being and productivity enhancements",
       "Detailed commercial Vastu report",
-      "Lifetime follow-up support",
+      "Follow-up support throughout your Vastu journey",
     ],
   },
   {
@@ -55,7 +55,7 @@ const services = [
       "Comprehensive digital report with diagrams",
       "Follow-up video call for implementation queries",
       "Email support for ongoing questions",
-      "Lifetime follow-up support",
+      "Follow-up support throughout your Vastu journey",
     ],
   },
   {
@@ -94,8 +94,8 @@ const ServicesPage = () => {
         <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 flex items-center justify-center gap-3 max-w-2xl mx-auto">
           <Shield className="w-8 h-8 text-accent shrink-0" />
           <div>
-            <p className="font-serif font-bold text-foreground">Lifetime Support Included</p>
-            <p className="text-sm text-muted-foreground">Every consultation comes with Rima Ma'am's promise of lifetime follow-up support at no extra cost.</p>
+            <p className="font-serif font-bold text-foreground">Ongoing Support Throughout Your Vastu Journey</p>
+            <p className="text-sm text-muted-foreground">Every consultation includes dedicated follow-up support to guide you through implementation. Continued support beyond the consultation period is available as needed.</p>
           </div>
         </div>
       </div>
