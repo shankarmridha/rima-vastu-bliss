@@ -7,13 +7,13 @@
 @layer base {
   :root {
     --background: 30 50% 97%;
-    --foreground: 20 30% 15%;
+    --foreground: 16 47% 12%;
 
     --card: 30 40% 98%;
-    --card-foreground: 20 30% 15%;
+    --card-foreground: 16 47% 12%;
 
     --popover: 30 40% 98%;
-    --popover-foreground: 20 30% 15%;
+    --popover-foreground: 16 47% 12%;
 
     --primary: 25 45% 59%;
     --primary-foreground: 30 50% 97%;
@@ -22,10 +22,10 @@
     --secondary-foreground: 30 50% 97%;
 
     --muted: 30 20% 92%;
-    --muted-foreground: 20 10% 45%;
+    --muted-foreground: 16 30% 28%;
 
     --accent: 43 50% 54%;
-    --accent-foreground: 20 30% 15%;
+    --accent-foreground: 16 47% 12%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -39,12 +39,17 @@
 
     --radius: 0.5rem;
 
+    --hero-label: 18 33% 18%;
+    --hero-highlight: 45 100% 24%;
+    --nav-text: 0 0% 10%;
+    --footer-light: 34 43% 93%;
+
     --sidebar-background: 30 30% 96%;
-    --sidebar-foreground: 20 30% 15%;
+    --sidebar-foreground: 16 47% 12%;
     --sidebar-primary: 25 45% 59%;
     --sidebar-primary-foreground: 30 50% 97%;
     --sidebar-accent: 30 20% 92%;
-    --sidebar-accent-foreground: 20 30% 15%;
+    --sidebar-accent-foreground: 16 47% 12%;
     --sidebar-border: 30 20% 85%;
     --sidebar-ring: 25 45% 59%;
   }
@@ -71,6 +76,10 @@
     --border: 20 15% 20%;
     --input: 20 15% 20%;
     --ring: 25 45% 59%;
+    --hero-label: 30 20% 85%;
+    --hero-highlight: 43 60% 60%;
+    --nav-text: 30 20% 92%;
+    --footer-light: 34 43% 93%;
     --sidebar-background: 20 25% 10%;
     --sidebar-foreground: 30 20% 92%;
     --sidebar-primary: 25 45% 59%;
@@ -120,4 +129,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;
+}
+
+/* Photo upload placeholder */
+.photo-upload-placeholder {
+  border: 2px dashed hsl(var(--primary));
+  background: linear-gradient(135deg, hsl(30 50% 97%), hsl(43 50% 90%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.photo-upload-placeholder:hover {
+  border-color: hsl(var(--accent));
+  background: linear-gradient(135deg, hsl(30 50% 95%), hsl(43 50% 85%));
 }
