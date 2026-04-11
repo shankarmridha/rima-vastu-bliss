@@ -3,7 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SectionDivider from "@/components/SectionDivider";
 
-const WHATSAPP_URL = "https://wa.me/919999999999?text=Hello%20Rima%2C%20I%20would%20like%20to%20enquire%20about%20your%20services.";
+const WHATSAPP_URL = "https://wa.me/918411017676?text=Hello%20Rima%20Ma'am%2C%20I%20would%20like%20to%20enquire%20about%20your%20services.";
+
+const serviceImages = [
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&h=400&fit=crop",
+];
 
 const services = [
   {
@@ -74,7 +81,7 @@ const ServicesPage = () => {
       <section className="py-20 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">What We Offer</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">Our Services</h1>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">Our Services</h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Comprehensive Vastu solutions tailored to your unique needs, combining the wisdom of three schools of Vastu 
             with practical, non-invasive remedies.
@@ -83,45 +90,42 @@ const ServicesPage = () => {
       </section>
 
       {/* Lifetime Support Badge */}
-      <div className="container mx-auto px-4 -mt-4 mb-12">
+      <div className="container mx-auto px-4 -mt-4 mb-8">
         <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 flex items-center justify-center gap-3 max-w-2xl mx-auto">
           <Shield className="w-8 h-8 text-accent shrink-0" />
           <div>
             <p className="font-serif font-bold text-foreground">Lifetime Support Included</p>
-            <p className="text-sm text-muted-foreground">Every consultation comes with Rima's promise of lifetime follow-up support at no extra cost.</p>
+            <p className="text-sm text-muted-foreground">Every consultation comes with Rima Ma'am's promise of lifetime follow-up support at no extra cost.</p>
           </div>
         </div>
       </div>
 
       {/* Services */}
       <section className="pb-20">
-        <div className="container mx-auto px-4 space-y-16">
+        <div className="container mx-auto px-4 space-y-12">
           {services.map(({ icon: Icon, title, desc, forWhom, includes }, i) => (
             <div key={title}>
               <Card className="border-primary/10 overflow-hidden bg-card">
                 <CardContent className="p-0">
                   <div className={`grid lg:grid-cols-2 ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                    {/* Image placeholder */}
-                    <div className={`bg-primary/5 flex items-center justify-center min-h-[300px] ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                      <div className="text-center p-8">
-                        <Icon className="w-16 h-16 text-primary/40 mx-auto mb-4" />
-                        <p className="text-muted-foreground text-sm">[Service Photo Placeholder]</p>
-                      </div>
+                    {/* Image */}
+                    <div className={`min-h-[300px] ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                      <img src={serviceImages[i]} alt={title} className="w-full h-full object-cover" loading="lazy" />
                     </div>
                     {/* Content */}
                     <div className={`p-8 lg:p-10 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3">
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
-                      <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-3">{title}</h2>
-                      <p className="text-muted-foreground leading-relaxed mb-4">{desc}</p>
-                      <div className="mb-4">
+                      <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-2">{title}</h2>
+                      <p className="text-muted-foreground leading-relaxed mb-3">{desc}</p>
+                      <div className="mb-3">
                         <p className="font-semibold text-sm text-foreground mb-1">Who is this for?</p>
                         <p className="text-sm text-muted-foreground">{forWhom}</p>
                       </div>
-                      <div className="mb-6">
+                      <div className="mb-5">
                         <p className="font-semibold text-sm text-foreground mb-2">What's included:</p>
-                        <ul className="space-y-2">
+                        <ul className="space-y-1.5">
                           {includes.map((item) => (
                             <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
                               <CheckCircle className="w-4 h-4 text-secondary shrink-0 mt-0.5" />

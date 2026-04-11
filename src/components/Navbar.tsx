@@ -14,7 +14,7 @@ const navLinks = [
   { to: "/contact", label: "Contact" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/919999999999?text=Hello%20Rima%2C%20I%20would%20like%20to%20book%20a%20Vastu%20consultation.";
+const WHATSAPP_URL = "https://wa.me/918411017676?text=Hello%20Rima%20Ma'am%2C%20I%20would%20like%20to%20book%20a%20Vastu%20consultation.";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,12 +26,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-              <span className="font-serif text-primary font-bold text-lg">RM</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-serif font-semibold text-foreground text-sm leading-tight">Rima Mridha</p>
-              <p className="text-[10px] text-muted-foreground tracking-wider uppercase">Vedic Vastu Consultant</p>
+            <div className="w-[160px] h-[50px] border-2 border-dashed border-primary/50 rounded-lg bg-primary/5 flex items-center justify-center">
+              <span className="text-[10px] text-muted-foreground text-center leading-tight">📷 Upload Logo Here</span>
             </div>
           </Link>
 
@@ -44,7 +40,7 @@ const Navbar = () => {
                 className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   location.pathname === link.to
                     ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    : "text-nav-text hover:text-foreground hover:bg-muted"
                 }`}
               >
                 {link.label}
@@ -83,7 +79,7 @@ const Navbar = () => {
                   className={`px-4 py-3 text-sm font-medium rounded-md transition-colors ${
                     location.pathname === link.to
                       ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      : "text-nav-text hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {link.label}
