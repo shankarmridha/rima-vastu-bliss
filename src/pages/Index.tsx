@@ -37,7 +37,7 @@ const HomePage = () => {
                 <span className="text-hero-highlight italic">Transform Your Life.</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg">
-                With over 15 years of expertise in Modern, Vedic, and Ayadi Vastu, Rima Ma'am helps you unlock the 
+                With over 15 years of professional experience in Architecture, Interior Design, and Vedic Vastu, Rima Ma'am helps you unlock the 
                 hidden potential of your spaces — bringing balance, prosperity, and well-being into every corner of your life.
               </p>
               <div className="flex flex-wrap gap-4">
